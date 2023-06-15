@@ -1,0 +1,212 @@
+body{
+    background-image: url("../images/stars.jpg");
+    background-size: cover;
+}
+.h1{
+    font-size:50px;
+    color:whitesmoke;
+    font-weight:700;
+    font-family: 'Bebas Neue', sans-serif;
+
+    animation-name: animationcolor;
+    animation-duration: 2s ;
+}
+
+.mze{
+    height:500px;
+    width:500px;
+    background-color:rgb(75, 75, 75);
+    margin: 0 auto;
+    margin-top:5%;
+    position:relative;
+    border-radius:50%;
+
+
+
+    transition: background-color 1s ease;
+    animation-name: reverseAnimation;
+    animation-duration: 2s;
+
+
+
+
+
+
+
+   
+    
+}
+
+.eye1{
+    position: absolute;
+    height:100px;
+    width:100px;
+    background-color:black;
+    top:240px;
+    left:100px;
+    border-radius:50%;
+
+
+
+
+
+    transition: top 1s ease;
+
+}
+
+
+.eye2{
+    position: absolute;
+    height:100px;
+    width:100px;
+    background-color:black;
+    top:240px;
+    left:290px;
+    border-radius:50%;
+
+
+    transition: top 1s ease;
+}
+
+
+.eyeball1{
+    height:20px;
+    width:20px;
+    background-color:white;
+    border-radius:50%;
+    position:absolute;
+    top:65px;
+    left:36px;
+
+}
+.eyeball2{
+    height:20px;
+    width:20px;
+    background-color:white;
+    border-radius:50%;
+    position:absolute;
+    top:65px;
+    left:36px;
+}
+
+.mouth{
+    height:100px;
+    width:200px;
+    position: absolute;
+    top:340px;
+    left:147px;
+    transition: transform 0.7s ease;
+    transform-origin: center ;
+}
+.sadmouth{
+    width:100px;
+    position: absolute;
+    left:50px;
+    top:30px;
+}
+
+.lightning1{
+    width:30px;
+    height:30px;
+    background-color:white;
+    position: absolute;
+    left:10px;
+    top:30px;
+    border-radius:50%;
+}
+
+
+
+
+
+
+
+.lightning2{
+    width:50px;
+    height:50px;
+    background-color:white;
+    position: absolute;
+    left:45px;
+    top:10px;
+    border-radius:50%;
+}
+
+
+/*hovers and keyframes*/
+@keyframes myanimation{
+    0% {
+        background-color:rgb(75, 75, 75) ;
+    }
+
+
+    100%{
+        background-color:rgb(251, 255, 0);
+    }
+
+
+
+
+}
+
+
+@keyframes reverseAnimation {
+    0% {
+      background-color: rgb(251, 255, 0);
+    }
+    100% {
+      background-color: rgb(75, 75, 75);
+    }
+  }
+
+
+
+
+.mze:hover{
+    background-color:rgb(251, 255, 0);
+    animation-name: myanimation;
+    animation-duration: 0.5s;
+}
+
+
+.mze:hover .eye1,
+.mze:hover .eye2 {
+  top: 200px;
+}
+
+
+.mze:hover .mouth {
+    transform: rotate(-180deg);
+    
+  }
+
+
+
+
+
+
+
+
+
+
+  .h1{
+    font-size:50px;
+    color:whitesmoke;
+    font-weight:700;
+    font-family: 'Bebas Neue', sans-serif;
+
+    animation-name: animationcolor;
+    animation-duration: 2s ;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animationcolor{
+    0%{
+        color:gray;
+    }
+    50%{
+        color:yellow;
+    }
+    100%{
+        color:gray;
+    }
+}
